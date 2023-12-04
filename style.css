@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    background-color: #ffff;
+    box-shadow: 5px 0px 10px ;
+}
+.logoblock, .menublock, .searchblock, .optionblock{
+    height: inherit;
+} 
+
+/* LOGOBLOCK CSS */
+.logoblock{
+    flex-basis: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav>.logoblock>.img{
+    height: 60px;
+    width: 60px;
+    background-image: url(./assets/myntralogo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* MENUBLOCK CSS */
+
+.menublock{
+    flex-basis: 35%;
+    font-size: 14px;
+    letter-spacing: .3px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav>.menublock>ul{
+    display: flex;
+    height: inherit;
+    justify-content: space-around;
+    position: relative;
+}
+
+nav>.menublock>ul>li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #3f2833;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 600;
+}
+nav>.menublock>ul>sup{
+    color: #ff3f6c;
+    margin-top: -12px;
+    padding: 3px;
+    font-size: 10px;
+    position: absolute;
+    top: 35px;
+    right: -20px;
+}
+
+nav>.menublock>ul>.men:hover{
+    border-bottom: 3.5px solid #f71d50;
+    border-top: 3.5px solid transparent;
+}
+nav>.menublock>ul>.women:hover{
+    border-bottom: 3.5px solid #fb56c1;
+    border-top: 3.5px solid transparent;
+}
+nav>.menublock>ul>.kids:hover{
+    border-bottom: 3.5px solid #f26a10;
+    border-top: 3.5px solid transparent;
+}
+nav>.menublock>ul>.home:hover{
+    border-bottom: 3.5px solid #f2c210;
+    border-top: 3.5px solid transparent;
+}
+nav>.menublock>ul>.beauty:hover{
+    border-bottom: 3.5px solid #0db7af;
+    border-top: 3.5px solid transparent;
+}
+nav>.menublock>ul>.studio:hover{
+    border-bottom: 3.5px solid #ff3f6c;
+    border-top: 3.5px solid transparent;
+}
+
+/* SEARCHBLOCK CSS */
+
+.searchblock{
+    flex-basis: 43%;
+    display: flex;
+}
+
+nav>.searchblock>.searchcontainer{
+    height: 52%;
+    width: 84%;
+    margin: auto;
+    background-color: #F5F5F6;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav>.searchblock>.searchcontainer>i{
+    color: grey;
+}
+
+nav>.searchblock>.searchcontainer>input{
+    border: none;
+    background-color:  transparent;
+    width: 90%;
+    outline: none;
+    border: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+nav>.searchblock>.searchcontainer:focus-within{
+    background-color: transparent;
+    outline: 1px solid #f5f5f6;
+}
+
+/* OPTIONBLOCK CSS */
+
+
+nav>.optionblock{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 10%;
+
+}
+
+nav>.optionblock>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+nav>.optionblock>div>i{
+    display: block;
+}
+
+nav>.optionblock>div>span{
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+}
+.slider{
+    height: 50vh;
+    width: 100%;
+}
+/* .slider{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: move;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-1500px);
+    }
+} */
+
+main>h2{
+    padding: 50px 30px;
+    letter-spacing: .15em;
+    font-size: 1.5em;
+    margin: 50px 0px 10px 30px;
+    max-height: 5em;
+    font-weight: 700;
+}
+
+.sideadd{
+    height: 40px;
+    width: 18rem;
+    background-color: rgb(102, 98, 98);
+    position: fixed;
+    right: -7.8rem;
+    color: white;
+    font-size: x-large;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    rotate: -90deg;
+    top: 62vh;
+}
+
+.sideadd>span{
+    color: white;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.sideadd>i{
+    color: white;
+    font-size: xx-large;
+}
+
+main>.block3{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+}
+
+main>.block3>div{
+    height: inherit;
+    width: 17%;
+}
+
+main>.block3>.img1{
+    background-image: url(https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/8/3/2ccbd34a-3340-4b55-bd4e-2ac182e425c11691079149976-image_png_1139490265.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main>.block3>.img2{
+    background-image: url(https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/8/4/ca44e488-c06b-48ce-814f-3a1e3e66e08b1691142548139-image_png_840304476.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main>.block3>.img3{
+    background-image: url(https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/8/4/ca44e488-c06b-48ce-814f-3a1e3e66e08b1691142548139-image_png_840304476.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main>.block3>.img4{
+    background-image: url(https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/8/4/ccebd3fc-3628-4eb5-9604-5487049c2cff1691142886405-image_png356438875.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main>.block3>.img5{
+    background-image: url(https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/8/4/30ce6d77-d4f5-4bed-b89a-c9cf00d197b81691142723203-image_png2141362199.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main>.block3>.img6{
+    background-image: url(https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/8/4/26abfeae-7980-4263-aac2-2e6206035da81691142704308-image_png_391142713.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+main>.block4{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+main>.block4>div{
+    height: 50vh;
+    width: 17%;
+    margin: 10px;
+}
+
+main>.block4>.img1{
+    background-image: url(https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/8/3/2ccbd34a-3340-4b55-bd4e-2ac182e425c11691079149976-image_png_1139490265.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main>.block4>.img2{
+    background-image: url(https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/8/4/ca44e488-c06b-48ce-814f-3a1e3e66e08b1691142548139-image_png_840304476.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main>.block4>.img3{
+    background-image: url(https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/8/4/ca44e488-c06b-48ce-814f-3a1e3e66e08b1691142548139-image_png_840304476.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main>.block4>.img4{
+    background-image: url(https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/8/4/ccebd3fc-3628-4eb5-9604-5487049c2cff1691142886405-image_png356438875.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main>.block4>.img5{
+    background-image: url(https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/8/4/30ce6d77-d4f5-4bed-b89a-c9cf00d197b81691142723203-image_png2141362199.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main>.block4>.img6{
+    background-image: url(https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/8/4/26abfeae-7980-4263-aac2-2e6206035da81691142704308-image_png_391142713.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer{
+    height: auto;
+    width: 100%;
+    font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 30px;
+    color: #94969f;
+    background: #FAFBFC;
+}
+
+footer>h3{
+    font-size: 14px;
+    font-weight: bold;
+    color: #535766!important;;
+}
+
+strong {
+    color: #535766!important;
+    font-weight: 700;
+    line-height: 18px;
+    font-size: 14px;
+}
+
+ul,ol{
+    padding: 30px;
+}
+
